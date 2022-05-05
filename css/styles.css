@@ -9,12 +9,34 @@
 }
 
 .body {
+    width: 1600px;
+    margin: 0 auto;
     color: #212121;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto',
+    sans-serif; 
+   
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul{
+    padding: 0;
+    margin:0;
+}
+
 /*стили для шапки*/
 .header {
     background: #FFFFFF;
+    border-bottom: 1px solid #ECECEC;
+}
+.container{
+    margin: 0 auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .navigation-logo,
 .footer-logo{
@@ -25,6 +47,7 @@
     letter-spacing: 0.03em;
     text-decoration: var(--text-decoration);
     color: #2196F3;
+    
 }
 .logo {
     color: #212121;
@@ -42,6 +65,8 @@
 {
     list-style: none;
 }
+
+
 .navigation-link {
     font-weight: 500;
     font-size: var(--font-size);
@@ -81,10 +106,22 @@
 }
 /*стило для главной*/
 .hero {
+    /*padding-top: 200px;*/
+    padding-bottom: 280px;
+    padding-left: 452px;
+    padding-right: 452px;
     background: #2F303A;
     text-align: center;
+    height: 600px;
 }
 .hero-title{
+    display: inline-block;
+    margin-top: 200PX;
+   /* margin-left: 452px;
+    margin-right: 452px;
+    width: 696px;
+    height: 120px;*/
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -94,6 +131,13 @@
 }
 /*кнопка студии*/
 .hero-btn{
+    display: inline-block;
+    padding: 10px 32px;
+    margin-top: 30PX;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -168,7 +212,10 @@
 }
 
 /*стили для главной*/
+.team{
+    background-color: #F5F4FA;
 
+}
 .chip-item-title{
     font-weight: 700;
     font-size: var(--font-size);
