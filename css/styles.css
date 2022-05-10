@@ -283,13 +283,15 @@ ul {
 
 .chip-list {
   display: flex;
+  justify-content: space-between;
 }
 
-.chip-itam {
-  margin-right: 30px;
+.chip-item {
+  /*  margin-right: 30px; */
+  width: 20%;
 }
-
-.chip-itam:last-child {
+.chip-item:last-child {
+  margin-right: 0;
 }
 
 .chip-title,
