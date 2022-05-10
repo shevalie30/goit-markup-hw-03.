@@ -287,7 +287,6 @@ ul {
 }
 
 .chip-item {
-  /*  margin-right: 30px; */
   width: 20%;
 }
 .chip-item:last-child {
