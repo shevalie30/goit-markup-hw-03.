@@ -6,6 +6,7 @@
   --letter-spacing: 0.02em;
   --text-decoration: none;
   --cursor: pointer;
+  --gallery-list-gap: 30px;
 }
 
 .body {
@@ -23,9 +24,14 @@ ul {
   margin: 0;
 }
 
+.img {
+  display: block;
+  max-width: 100%;
+}
+
 .container {
   /* outline: 2px solid red; */
-  width: 1200px;
+  width: 1208px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -118,8 +124,6 @@ ul {
 }
 
 .navigation-link {
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
   font-size: var(--font-size);
   line-height: var(--line-height);
@@ -133,8 +137,6 @@ ul {
 }
 .navigation-link-activ,
 .list-link-aktiv {
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
   font-size: var(--font-size);
   line-height: var(--line-height);
@@ -209,7 +211,7 @@ ul {
 }
 
 .gallery-btn {
-  padding: 6px 22px 6px 22px;
+  padding: 6px 22px;
   border: none;
   border-radius: 4px;
   font-weight: 500;
@@ -235,12 +237,7 @@ ul {
   justify-content: center;
   margin-bottom: 50px;
 }
-.gallery-ps {
-  padding: 20px 24px;
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-}
+
 /* style portfolio */
 
 .gallery {
@@ -250,21 +247,37 @@ ul {
 .gallery-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  margin-left: calc(-1 * var(--gallery-list-gap));
+  margin-top: calc(-1 * var(--gallery-list-gap));
 }
-.gallery-item:nth-child(-n + 6) {
-  margin-bottom: 30px;
+
+.gallery-list > .gallery-item {
+  flex-basis: calc(100% / 3-var(--gallery-list-gap));
+  margin-top: var(--gallery-list-gap);
+  margin-left: var(--gallery-list-gap);
+}
+
+.card {
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.gallery-ps {
+  padding: 20px 24px;
 }
 
 .gallery-title {
-  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
 }
 .gallery-team {
+  margin-top: 4px;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
@@ -275,7 +288,6 @@ ul {
 
 .chip {
   padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .chip-list {
@@ -334,8 +346,8 @@ ul {
 
 .team {
   background-color: #f5f4fa;
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-item-title {
