@@ -31,7 +31,7 @@ ul {
 
 .container {
   /* outline: 2px solid red; */
-  width: 1208px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -256,19 +256,16 @@ ul {
 }
 
 .gallery-list > .gallery-item {
-  flex-basis: calc(100% / 3-var(--gallery-list-gap));
+  flex-basis: calc(100% / 3 - var(--gallery-list-gap));
   margin-top: var(--gallery-list-gap);
   margin-left: var(--gallery-list-gap);
 }
 
-.card {
+.gallery-ps {
+  padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
-}
-
-.gallery-ps {
-  padding: 20px 24px;
 }
 
 .gallery-title {
